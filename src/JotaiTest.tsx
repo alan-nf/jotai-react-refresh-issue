@@ -1,6 +1,7 @@
 import * as React from "react";
 import { atom } from "jotai";
 import { useAtomValue, useUpdateAtom } from "jotai/utils";
+import { Copy } from "./Copy";
 
 const countAtom = atom(0);
 
@@ -15,10 +16,6 @@ function Button() {
       +1
     </button>
   );
-}
-
-function Copy() {
-  return <p>Click this button to increment the counter:</p>;
 }
 
 export default function JotaiTest() {
